@@ -18,9 +18,9 @@ public class SpiteHover : MonoBehaviour {
         Pos = this.gameObject.transform.position;
 
         Counter += Rate * Time.deltaTime;
-        sinCounter = Mathf.sin(Counter);
+        sinCounter = 1.0f;
 
-        Pos += new Vector3(0, sinCounter, 0);
+        Pos += new Vector3(0.0f, sinCounter, 0.0f);
 
 
         this.gameObject.transform.position = Pos;
